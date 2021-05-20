@@ -35,4 +35,12 @@ In de starterscode is al heel wat aanwezig :
       Deze methode gebruikt het meegeleverde object gebruiker om een record (op basis van de Id waarde) aan te passen in de tabel gebruikers en geeft aan of dat al dan niet gelukt is.  
     * public bool GebruikerVerwijderen(Gebruiker gebruiker)
       Deze methode gebruikt het meegeleverde object gebruiker om een record (op basis van de Id waarde) te verwijderen uit de tabel gebruikers en geeft aan of dat al dan niet gelukt is.  
+    * public bool KenRechtToeAanGebruiker(Gebruiker gebruiker, Onderdeel onderdeel)  
+      Deze methode gebruikt de meegeleverde gebruiker en onderdeel objecten om een record toe te voegen aan de tabel rechten en geeft aan of dat al dan niet gelukt is.  
+    * public bool OntneemRechtVanGebruiker(Gebruiker gebruiker, Onderdeel onderdeel)  
+      Deze methode gebruikt de meegeleverde gebruiker en onderdeel objecten om een record te verwijderen uit de tabel rechten en geeft aan of dat al dan niet gelukt is.  
   
+In je code behind van je WPF venster zijn alle event handlers reeds aanwezig maar die je uiteraard zelf nog de correcte invullen te geven.   
+Zorg er uiteraard voor dat er geen enkele databaseverwijzing in je code behind komt en gebruik enkel de functionaliteiten van de service klasse GebruikersService.  
+
+Succes!
