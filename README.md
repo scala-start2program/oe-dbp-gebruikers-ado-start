@@ -16,6 +16,14 @@ In de starterscode is al heel wat aanwezig :
   * Er is ook een service klasse GebruikersService aanwezig maar die je nog volledig in te vullen.  Deze service klasse vormt de brug tussen de code behind van je WPF venster en het database gebeuren (dus je klasse DBService).  
     Deze GebruikersService klasse dient over volgende methoden te beschikken : 
     * public List<Gebruiker> GetAlleGebruikers()  
-    * public List<Gebruiker> GetGebruikersMetToegangTotOnderdeel(Onderdeel onderdeel)  
-    
+      deze methode haalt alle gebruikers, gesorteerd op naam en voornaam uit de tabel en levert de inhoud af als een list van gebruiker objecten.  
+    * public List<Gebruiker> GetGebruikersMetToegangTotOnderdeel(Onderdeel onderdeel)    
+      deze methode haalt alle gebruikers, gesorteerd op naam en voornaam uit de tabel die toegang hebben tot een opgegeven onderdeel en levert de inhoud af als een list van gebruiker objecten.
+    * public List<Gebruiker> GetGebruikersZonderToegangTotOnderdeel(Onderdeel onderdeel)  
+      deze methode haalt alle gebruikers, gesorteerd op naam en voornaam uit de tabel die GEEN toegang hebben tot een opgegeven onderdeel en levert de inhoud af als een list van gebruiker objecten.    
+    * public bool IsGebruikersnaamUniek(string gebruikersnaam)  
+      Deze methode zoekt in de tabel gebruikers of de opgegeven gebruikersnaam al of niet bestaat en geeft TRUE terug wannneer die gevonden wordt, anders FALSE  
+    * public List<Onderdeel> GetOnderdelen()
+      Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam op uit de tabel en levert de inhoud af als een list van onderdeel objecten.  
+    * 
 
