@@ -15,19 +15,19 @@ In de starterscode is al heel wat aanwezig :
   * De service klassen DBService en Helper zijn reeds aanwezig (alsook de nodige bibliotheken en referenties) , dus daar hoef je niets meer voor te doen.  
   * Er is ook een service klasse GebruikersService aanwezig maar die je nog volledig in te vullen.  Deze service klasse vormt de brug tussen de code behind van je WPF venster en het database gebeuren (dus je klasse DBService).  
     Deze GebruikersService klasse dient over volgende methoden te beschikken : 
-    * public List<Gebruiker> GetAlleGebruikers()  
+    * public List&lt;Gebruiker&gt; GetAlleGebruikers()  
       deze methode haalt alle gebruikers, gesorteerd op naam en voornaam uit de tabel en levert de inhoud af als een list van gebruiker objecten.  
-    * public List<Gebruiker> GetGebruikersMetToegangTotOnderdeel(Onderdeel onderdeel)    
+    * public List&lt;Gebruiker&gt; GetGebruikersMetToegangTotOnderdeel(Onderdeel onderdeel)    
       deze methode haalt alle gebruikers, gesorteerd op naam en voornaam uit de tabel die toegang hebben tot een opgegeven onderdeel en levert de inhoud af als een list van gebruiker objecten.
-    * public List<Gebruiker> GetGebruikersZonderToegangTotOnderdeel(Onderdeel onderdeel)  
+    * public List&lt;Gebruiker&gt; GetGebruikersZonderToegangTotOnderdeel(Onderdeel onderdeel)  
       deze methode haalt alle gebruikers, gesorteerd op naam en voornaam uit de tabel die GEEN toegang hebben tot een opgegeven onderdeel en levert de inhoud af als een list van gebruiker objecten.    
     * public bool IsGebruikersnaamUniek(string gebruikersnaam)  
       Deze methode zoekt in de tabel gebruikers of de opgegeven gebruikersnaam al of niet bestaat en geeft TRUE terug wannneer die gevonden wordt, anders FALSE  
-    * public List<Onderdeel> GetOnderdelen()
+    * public List&lt;Onderdeel&gt; GetOnderdelen()
       Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam op uit de tabel en levert de inhoud af als een list van onderdeel objecten.  
-    * public List<Onderdeel> GetOnderdelenMetToegangVoorGebruiker(Gebruiker gebruiker)
+    * public List&lt;Onderdeel&gt; GetOnderdelenMetToegangVoorGebruiker(Gebruiker gebruiker)
       Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam, op uit de tabel waartoe de meegeleverde gebruiker toegang heeft en levert de inhoud af als een list van onderdeel objecten. 
-    * public List<Onderdeel> GetOnderdelenZonderToegangVoorGebruiker(Gebruiker gebruiker)
+    * public List&lt;Onderdeel&gt; GetOnderdelenZonderToegangVoorGebruiker(Gebruiker gebruiker)
       Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam, op uit de tabel waartoe de meegeleverde gebruiker GEEN toegang heeft en levert de inhoud af als een list van onderdeel objecten. 
     * public bool GebruikerToevoegen(Gebruiker gebruiker)   
       Deze methode gebruikt het meegeleverde object gebruiker om een record toe te voegen aan de tabel gebruikers en geeft aan of dat al dan niet gelukt is.  
