@@ -25,5 +25,14 @@ In de starterscode is al heel wat aanwezig :
       Deze methode zoekt in de tabel gebruikers of de opgegeven gebruikersnaam al of niet bestaat en geeft TRUE terug wannneer die gevonden wordt, anders FALSE  
     * public List<Onderdeel> GetOnderdelen()
       Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam op uit de tabel en levert de inhoud af als een list van onderdeel objecten.  
-    * 
-
+    * public List<Onderdeel> GetOnderdelenMetToegangVoorGebruiker(Gebruiker gebruiker)
+      Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam, op uit de tabel waartoe de meegeleverde gebruiker toegang heeft en levert de inhoud af als een list van onderdeel objecten. 
+    * public List<Onderdeel> GetOnderdelenZonderToegangVoorGebruiker(Gebruiker gebruiker)
+      Deze methode haalt alle onderdelen, gesorteerd op onderdeelnaam, op uit de tabel waartoe de meegeleverde gebruiker GEEN toegang heeft en levert de inhoud af als een list van onderdeel objecten. 
+    * public bool GebruikerToevoegen(Gebruiker gebruiker)   
+      Deze methode gebruikt het meegeleverde object gebruiker om een record toe te voegen aan de tabel gebruikers en geeft aan of dat al dan niet gelukt is.  
+    * public bool GebruikerWijzigen(Gebruiker gebruiker)  
+      Deze methode gebruikt het meegeleverde object gebruiker om een record (op basis van de Id waarde) aan te passen in de tabel gebruikers en geeft aan of dat al dan niet gelukt is.  
+    * public bool GebruikerVerwijderen(Gebruiker gebruiker)
+      Deze methode gebruikt het meegeleverde object gebruiker om een record (op basis van de Id waarde) te verwijderen uit de tabel gebruikers en geeft aan of dat al dan niet gelukt is.  
+  
